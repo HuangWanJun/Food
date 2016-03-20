@@ -16,10 +16,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        let splitViewController = self.window!.rootViewController as! UISplitViewController
-        let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count-1] as! UINavigationController
-        navigationController.topViewController!.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem()
-        splitViewController.delegate = self
+
+        UINavigationBar.appearance().barTintColor = UIColor(red: 242/255, green: 116/255, blue: 119/255, alpha: 1)
+        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
+        if let font = UIFont(name: "Avenir-Light", size: 24)
+        {
+            UINavigationBar.appearance().titleTextAttributes = [
+                NSForegroundColorAttributeName:UIColor.whiteColor(),
+                NSFontAttributeName:font
+            ]
+        }
+     
+
+
+        
+        UIApplication.sharedApplication().statusBarStyle = .LightContent
+        
         return true
     }
 

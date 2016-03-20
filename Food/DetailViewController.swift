@@ -11,8 +11,13 @@ import UIKit
 class DetailViewController: UIViewController {
 
     @IBOutlet weak var detailDescriptionLabel: UILabel!
+    
+    @IBOutlet weak var imageView: UIImageView!
+    
+    
+    var canteen : Canteen!
 
-
+    
     var detailItem: AnyObject? {
         didSet {
             // Update the view.
@@ -31,8 +36,11 @@ class DetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+      
+        
         self.configureView()
+        
+        imageView.image = UIImage(named: canteen.image)
     }
 
     override func didReceiveMemoryWarning() {
