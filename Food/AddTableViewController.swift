@@ -7,10 +7,20 @@
 //
 
 import UIKit
+import CoreData
 
 class AddTableViewController: UITableViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
 
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var type: UITextField!
+    @IBOutlet weak var name: UITextField!
+    @IBOutlet weak var loaction: UITextField!
+    var restaurant :Restaurant!
+    var isVistied = false
+    
+    
+    @IBOutlet weak var lbl: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
  
@@ -21,6 +31,43 @@ class AddTableViewController: UITableViewController,UIImagePickerControllerDeleg
         
         
     }
+    
+    @IBAction func SaveEvent(sender: AnyObject) {
+    
+        let buffer  = (UIApplication.sharedApplication().delegate as? AppDelegate)?.managedObjectContext
+        
+      let restaurant =   NSEntityDescription.insertNewObjectForEntityForName("Restaurant", inManagedObjectContext: buffer!) as! Restaurant
+        restaurant.name = name.text
+        restaurant.type = type.text
+        restaurant.location = loaction.text
+        
+        if let image = imageView.image {
+            restaurant.image = UIImagePNGRepresentation(image)
+        }
+        restaurant.isVisited = isVistied
+        
+        do{
+            try buffer?.save()
+        }catch{
+            print(error)
+        }
+        
+        performSegueWithIdentifier("unWindToHome", sender: sender)
+    }
+    
+    
+    @IBAction func isVisitedEvent(sender: AnyObject) {
+        if sender.tag == 30 {
+            isVistied = true
+            lbl.text = "我来过"
+        }else
+        {
+            isVistied = false
+            lbl.text = "我没来过"
+        }
+    
+    }
+    
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         if indexPath.row == 0 {

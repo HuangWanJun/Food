@@ -10,7 +10,7 @@ import UIKit
 
 class ShowDetailViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
-    var canteen:Canteen!
+    var canteen:Restaurant!
     @IBOutlet weak var ratingBtn: UIButton!
     
     @IBOutlet weak var tableView: UITableView!
@@ -28,6 +28,11 @@ class ShowDetailViewController: UIViewController,UITableViewDelegate,UITableView
         
 //        title = canteen.name
         navigationItem.title = canteen.name
+   
+            ratingBtn.setImage(UIImage(named:canteen.rating!), forState: .Normal)
+      
+    
+     
         tableView.estimatedRowHeight = 40
         tableView.rowHeight = UITableViewAutomaticDimension
     }
@@ -66,13 +71,13 @@ class ShowDetailViewController: UIViewController,UITableViewDelegate,UITableView
             cell.fieladLbl.text = canteen.location
         case 3:
             cell.keyLbl.text = "cantenn Name"
-            cell.fieladLbl.text = canteen.isVisited ? "Yes" : "NO"
+            cell.fieladLbl.text = canteen.isVisited!.boolValue ? "Yes" : "NO"
         default:
             cell.keyLbl.text = "cantenn Name"
             cell.fieladLbl.text = ""
         }
         cell.backgroundColor = UIColor.clearColor()
-        imageView.image = UIImage(named: canteen.image)
+        imageView.image = UIImage(data: canteen.image!)
         return cell
         
     }
@@ -83,6 +88,16 @@ class ShowDetailViewController: UIViewController,UITableViewDelegate,UITableView
             if let rating =  revVC.rating {
                 self.canteen.rating = rating
                 self.ratingBtn.setImage(UIImage(named: rating), forState: .Normal)
+            
+                let buffer = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
+                
+                do{
+                    try buffer.save()
+                    
+                }catch{
+                    print(error)
+                }
+            
             }
             
         }

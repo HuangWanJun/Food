@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A6509F401CA18A7F00EE80B5 /* Food.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A6509F3E1CA18A7F00EE80B5 /* Food.xcdatamodeld */; };
+		A6509F4F1CA18D8800EE80B5 /* Restaurant+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6509F4D1CA18D8800EE80B5 /* Restaurant+CoreDataProperties.swift */; };
+		A6509F501CA18D8800EE80B5 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6509F4E1CA18D8800EE80B5 /* Restaurant.swift */; };
 		A6BCF1491C9D2C77009CB730 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BCF1481C9D2C77009CB730 /* AppDelegate.swift */; };
 		A6BCF14B1C9D2C77009CB730 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BCF14A1C9D2C77009CB730 /* MasterViewController.swift */; };
 		A6BCF14D1C9D2C77009CB730 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BCF14C1C9D2C77009CB730 /* DetailViewController.swift */; };
@@ -16,7 +19,7 @@
 		A6BCF16B1C9D2C77009CB730 /* FoodUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BCF16A1C9D2C77009CB730 /* FoodUITests.swift */; };
 		A6BCF1791C9D318B009CB730 /* CanteenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BCF1781C9D318B009CB730 /* CanteenCell.swift */; };
 		A6BCF17B1C9D3936009CB730 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6BCF17A1C9D3936009CB730 /* Main.storyboard */; };
-		A6BCF17E1C9D9D39009CB730 /* Canteen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BCF17D1C9D9D39009CB730 /* Canteen.swift */; };
+		A6BCF17E1C9D9D39009CB730 /* Canteen1.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BCF17D1C9D9D39009CB730 /* Canteen1.swift */; };
 		A6BCF1801C9DAB3B009CB730 /* ShowDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BCF17F1C9DAB3B009CB730 /* ShowDetailViewController.swift */; };
 		A6BCF1821C9E6355009CB730 /* ShowDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BCF1811C9E6355009CB730 /* ShowDetailCell.swift */; };
 		A6BCF1841C9E815C009CB730 /* ReViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BCF1831C9E815C009CB730 /* ReViewViewController.swift */; };
@@ -43,6 +46,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A6509F3F1CA18A7F00EE80B5 /* Food.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Food.xcdatamodel; sourceTree = "<group>"; };
+		A6509F4D1CA18D8800EE80B5 /* Restaurant+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Restaurant+CoreDataProperties.swift"; path = "Food/Restaurant+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A6509F4E1CA18D8800EE80B5 /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Restaurant.swift; path = Food/Restaurant.swift; sourceTree = "<group>"; };
 		A6BCF1451C9D2C77009CB730 /* Food.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Food.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6BCF1481C9D2C77009CB730 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6BCF14A1C9D2C77009CB730 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -59,7 +65,7 @@
 		A6BCF1781C9D318B009CB730 /* CanteenCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanteenCell.swift; sourceTree = "<group>"; };
 		A6BCF17A1C9D3936009CB730 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		A6BCF17C1C9D9C99009CB730 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
-		A6BCF17D1C9D9D39009CB730 /* Canteen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Canteen.swift; sourceTree = "<group>"; };
+		A6BCF17D1C9D9D39009CB730 /* Canteen1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Canteen1.swift; sourceTree = "<group>"; };
 		A6BCF17F1C9DAB3B009CB730 /* ShowDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowDetailViewController.swift; sourceTree = "<group>"; };
 		A6BCF1811C9E6355009CB730 /* ShowDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowDetailCell.swift; sourceTree = "<group>"; };
 		A6BCF1831C9E815C009CB730 /* ReViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReViewViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +103,8 @@
 		A6BCF13C1C9D2C77009CB730 = {
 			isa = PBXGroup;
 			children = (
+				A6509F4D1CA18D8800EE80B5 /* Restaurant+CoreDataProperties.swift */,
+				A6509F4E1CA18D8800EE80B5 /* Restaurant.swift */,
 				A6BCF1851C9EAA26009CB730 /* MapKit.framework */,
 				A6BCF1471C9D2C77009CB730 /* Food */,
 				A6BCF15E1C9D2C77009CB730 /* FoodTests */,
@@ -132,7 +140,8 @@
 				A6BCF1531C9D2C77009CB730 /* LaunchScreen.storyboard */,
 				A6BCF1561C9D2C77009CB730 /* Info.plist */,
 				A6BCF1781C9D318B009CB730 /* CanteenCell.swift */,
-				A6BCF17D1C9D9D39009CB730 /* Canteen.swift */,
+				A6BCF17D1C9D9D39009CB730 /* Canteen1.swift */,
+				A6509F3E1CA18A7F00EE80B5 /* Food.xcdatamodeld */,
 			);
 			path = Food;
 			sourceTree = "<group>";
@@ -291,15 +300,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6509F501CA18D8800EE80B5 /* Restaurant.swift in Sources */,
 				A6BCF1821C9E6355009CB730 /* ShowDetailCell.swift in Sources */,
 				A6BCF1801C9DAB3B009CB730 /* ShowDetailViewController.swift in Sources */,
+				A6509F401CA18A7F00EE80B5 /* Food.xcdatamodeld in Sources */,
 				A6BCF14D1C9D2C77009CB730 /* DetailViewController.swift in Sources */,
 				A6BCF14B1C9D2C77009CB730 /* MasterViewController.swift in Sources */,
 				A6BCF1881C9EAD09009CB730 /* MapViewController.swift in Sources */,
+				A6509F4F1CA18D8800EE80B5 /* Restaurant+CoreDataProperties.swift in Sources */,
 				A6BCF1791C9D318B009CB730 /* CanteenCell.swift in Sources */,
 				A6BCF1491C9D2C77009CB730 /* AppDelegate.swift in Sources */,
 				A6BCF1841C9E815C009CB730 /* ReViewViewController.swift in Sources */,
-				A6BCF17E1C9D9D39009CB730 /* Canteen.swift in Sources */,
+				A6BCF17E1C9D9D39009CB730 /* Canteen1.swift in Sources */,
 				A6BCF18A1C9EBDDF009CB730 /* AddTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -521,6 +533,7 @@
 				A6BCF1711C9D2C77009CB730 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A6BCF1721C9D2C77009CB730 /* Build configuration list for PBXNativeTarget "FoodTests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +542,7 @@
 				A6BCF1741C9D2C77009CB730 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A6BCF1751C9D2C77009CB730 /* Build configuration list for PBXNativeTarget "FoodUITests" */ = {
 			isa = XCConfigurationList;
@@ -537,8 +551,22 @@
 				A6BCF1771C9D2C77009CB730 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A6509F3E1CA18A7F00EE80B5 /* Food.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A6509F3F1CA18A7F00EE80B5 /* Food.xcdatamodel */,
+			);
+			currentVersion = A6509F3F1CA18A7F00EE80B5 /* Food.xcdatamodel */;
+			path = Food.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A6BCF13D1C9D2C77009CB730 /* Project object */;
 }

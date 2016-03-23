@@ -15,7 +15,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     
     
-    var canteen : Canteen!
+    var canteen : Restaurant!
 
     
     var detailItem: AnyObject? {
@@ -40,7 +40,7 @@ class DetailViewController: UIViewController {
         
         self.configureView()
         
-        imageView.image = UIImage(named: canteen.image)
+        imageView.image = UIImage(data: canteen.image!)
     }
 
     override func didReceiveMemoryWarning() {

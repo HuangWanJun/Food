@@ -9,7 +9,7 @@
 import UIKit
 import Foundation
 
-struct Canteen {
+struct Canteen1{
     var name:String
     var type:String
     var location:String
